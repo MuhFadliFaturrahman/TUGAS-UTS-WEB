@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Rumah - Perumahan Sejahtera</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container-order">
+        <!-- Logo perumahan, opsional -->
+        <!-- <img src="images/logo.png" alt="Logo Perumahan"> -->
+        
+        <!-- Judul Halaman -->
+        <h1>Formulir Pemesanan Rumah</h1>
+        <p>Isi formulir berikut untuk memesan rumah impian Anda.</p>
+
+        <!-- Formulir Pemesanan -->
+        <form action="submit_order.html" method="post">
+            <label for="name">Nama Lengkap</label>
+            <div class="input-container">
+                <i class="fas fa-user icon"></i>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <label for="email">Email</label>
+            <div class="input-container">
+                <i class="fas fa-envelope icon"></i>
+                <input type="email" id="email" name="email" placeholder="contoh@domain.com" required>
+            </div>
+
+            <label for="phone">Telepon</label>
+            <div class="input-container">
+                <i class="fas fa-phone icon"></i>
+                <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx" required>
+            </div>
+
+            <label for="type">Tipe Rumah</label>
+            <div class="input-container">
+                <i class="fas fa-home icon"></i>
+                <select id="type" name="type" required>
+                    <option value="" disabled selected>Pilih Tipe Rumah</option>
+                    <option value="Tipe 36">Tipe 36</option>
+                    <option value="Tipe 45">Tipe 45</option>
+                    <option value="Tipe 54">Tipe 54</option>
+                    <option value="Tipe 70">Tipe 70</option>
+                    <option value="Tipe 120">Tipe 120</option>
+                </select>
+            </div>
+
+            <label for="message">Pesan Tambahan</label>
+            <div class="input-container">
+                <i class="fas fa-comment icon"></i>
+                <input type="text" id="message" name="message" placeholder="Pesan tambahan (opsional)">
+            </div>
+
+            <button type="submit" class="button">Pesan Sekarang</button>
+        </form>
+    </div>
+</body>
+</html>
